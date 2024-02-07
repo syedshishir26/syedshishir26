@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Shafiqur Rahman Shishir-Portfolio</title>
+    <link rel="shortcut icon" href="images/Syed_Shafiqur_Rahman_Shishir_rounded.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Protest+Riot&family=Roboto+Slab:wght@100;300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3976eee170.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        about_color: '#7EE787',
+                        project_color: '#FFB77C',
+                        contact_color: '#939AFF',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0D1117;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        .mobile_nav {
+            left: -60px;
+        }
+
+        .nav_for_mobile:hover .mobile_nav {
+            display: block;
+        }
+
+        #banner_sec {
+            background-image: url(images/banner_bg.png);
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        footer {
+            background-image: url(images/footerbg.png);
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body class=" mt-4 md:pt-16">
+    <main class="mx-2 md:mx-16 lg:mx-32">
+        <!-- Nav Section -->
+        <nav class="bg-white/10 text-white flex justify-between p-5 rounded-2xl items-center">
+            <h1 class="text-2xl font-normal">Syed Shishir</h1>
+            <div>
+                <div class="hidden md:flex list-none font-thin">
+                    <li class="pr-5"><a href="">Home</a></li>
+                    <li class="pr-5 hover:text-about_color"><a href="#about_sec">About</a></li>
+                    <li class="pr-5 hover:text-project_color"><a href="#project_sec">Projects</a></li>
+                    <li class="hover:text-contact_color"><a href="#contact_sec">Contact</a></li>
+                </div>
+                <div class="nav_for_mobile relative md:hidden">
+                    <span class="material-symbols-outlined menu_icon">menu</span>
+                    <div class="mobile_nav hidden absolute list-none bg-black/70 p-3 rounded-xl z-10">
+                        <li class="pr-5"><a href="">Home</a></li>
+                        <li class="pr-5 hover:text-about_color"><a href="#about_sec">About</a></li>
+                        <li class="pr-5 hover:text-project_color"><a href="#project_sec">Projects</a></li>
+                        <li class="hover:text-contact_color"><a href="#contact_sec">Contact</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner Section -->
+        <section
+            class="mt-5 py-2 px-10 md:px-20 md:py-5 flex flex-col md:flex-row gap-8 justify-between items-center relative"
+            id="banner_sec">
+            <div class="">
+                <h1 class="text-3xl md:text-4xl lg:text-6xl text-white font-bold leading-8 md:leading-10 lg:leading-[70px]"
+                    style="font-family: 'Protest Riot', sans-serif;">Hello There! <br>I'm <br>SYED SHAFIQUR<br>RAHMAN
+                    <span>SHISHIR</span>
+                </h1>
+                <p class="text-white mt-5 text-sm md:text-xl">Front-End Developer || Hardware Enthusiast</p>
+            </div>
+            <div class="relative">
+                <img src="images/moon_art.png" class="absolute md:right-[150px] -z-10 lg:right-[300px]">
+                <img src="images/ssrs.png" class="h-full w-auto ">
+            </div>
+            <img src="images/png_arrows/banner_arrow.png" class="absolute bottom-0 left-0">
+        </section>
+        <!-- About Section -->
+        <section class="mt-10 relative " id="about_sec">
+            <div class="absolute top-0 left-0">
+                <img src="images/png_arrows/about_up.png" alt="">
+            </div>
+
+            <div class="px-10 md:px-20 md:py-5">
+                <h1 class="text-about_color text-4xl mb-10">About Me</h1>
+                <div class="flex justify-around items-center mb-10">
+                    <div
+                        class="p-5 md:p-10 rounded-2xl bg-white/20 text-white text-xs md:text-xl max-w-[650px] border-t border-l border-about_color">
+                        <p>Hello, I'm Syed Shafiqur Rahman Shishir, and I'm not your average developer. I thrive in
+                            the
+                            dynamic world of frontend development, where I bring web applications to life using
+                            HTML,
+                            CSS, Tailwind, React, Node, and MongoDB. Beyond coding, I'm a hardware enthusiast with
+                            the
+                            skill
+                            to expertly assemble PCs, showcasing my versatility in both software and hardware
+                            domains.
+                        </p>
+                    </div>
+                    <img src="images/png_arrows/about_design.png"
+                        class="hidden lg:block max-w-[150px] 2xl:max-w-[300px] ml-5">
+                </div>
+                <div class="flex justify-around items-center">
+                    <img src="images/png_arrows/about_design.png"
+                        class="hidden lg:block max-w-[150px] 2xl:max-w-[300px] mr-5">
+                    <div
+                        class="p-5 md:p-10 rounded-2xl bg-white/20 text-white text-xs md:text-xl max-w-[650px] border-b border-r border-about_color">
+                        <p>With a 4-year diploma in Computer Science, I've built a robust foundation for my
+                            innovative
+                            projects. But it's not all about code for me - in my free time, I'm a passionate
+                            e-sports
+                            gamer, channeling my competitive spirit into the virtual arena. So, whether I'm crafting
+                            code or
+                            assembling hardware, I'm always pushing the boundaries of technology and finding new
+                            ways to
+                            express my love for the digital world.</p>
+                    </div>
+                </div>
+                <div class="mt-10">
+                    <h1 class="text-about_color text-2xl mb-5">Click the button bellow to download my CV:</h1>
+                    <button class="text-about_color text-2xl border-2 border-about_color p-2 rounded-xl"><a
+                            href="images/syed_shafiqur_rahman_shishir.CV.pdf" download>Download</a></button>
+                </div>
+            </div>
+            <div class="absolute bottom-0 left-0">
+                <img src="images/png_arrows/about_down.png">
+            </div>
+
+        </section>
+        <!-- Project Section -->
+        <section class="mt-10 relative px-4 md:px-10 py-5" id="project_sec">
+            <div class="absolute top-0 left-0">
+                <img src="images/png_arrows/project_up.png" alt="">
+            </div>
+            <div class="absolute bottom-0 left-0">
+                <img src="images/png_arrows/project_down.png">
+            </div>
+            <h1 class="text-project_color text-4xl mb-10">My Projects</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 lg:gap-8">
+                <!-- 1 -->
+                <div
+                    class="bg-white/20 rounded-xl border-l-2 border-r-2  md:border-t-2 md:border-r-0 border-project_color">
+                    <img src="images/project_image/p_1.png" class="w-full rounded-t-xl border-b-2 border-project_color">
+                    <div class="p-2 flex flex-col justify-between min-h-[250px]">
+                        <div>
+                            <h1 class="text-project_color text-lg md:text-2xl border-b-2 border-project_color">Buildign
+                                website with Html and
+                                css</h1>
+                            <p class="text-white text-xs md:text-sm ">I just use Html and basic Css in this project.
+                                this site is not
+                                responsive!</p>
+                        </div>
+                        <div class="flex flex-col md:flex-row gap-1 justify-start mt-4">
+                            <button
+                                class="text-project_color text-sm md:text-lg border-2 border-project_color p-1 rounded-xl"><a
+                                    href="images/syed_shafiqur_rahman_shishir.CV.pdf">Source Code</a></button>
+                            <button
+                                class="text-project_color text-sm md:text-lg border-2 border-project_color p-1 rounded-xl"><a
+                                    href="images/syed_shafiqur_rahman_shishir.CV.pdf">Live link</a></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div
+                    class="bg-white/20 rounded-xl border-l-2 border-r-2 md:border-l-0 md:border-r-0 lg:border-t-2 border-project_color">
+                    <img src="images/project_image/p_2.png" class="w-full rounded-t-xl border-b-2 border-project_color">
+                    <div class="p-2 flex flex-col justify-between min-h-[250px]">
+                        <div>
+                            <h1 class="text-project_color text-lg md:text-2xl border-b-2 border-project_color">
+                                Responsive website with vanila css</h1>
+                            <p class="text-white text-xs md:text-sm ">This is a sweet web site for traveling company.It
+                                built by only raw code of html and css. This site is completely responsive. </p>
+                        </div>
+                        <div class="flex flex-col md:flex-row gap-1 justify-start mt-4">
+                            <button
+                                class="text-project_color text-sm md:text-lg border-2 border-project_color p-1 rounded-xl"><a
+                                    href="images/syed_shafiqur_rahman_shishir.CV.pdf">Source Code</a></button>
+                            <button
+                                class="text-project_color text-sm md:text-lg border-2 border-project_color p-1 rounded-xl"><a
+                                    href="images/syed_shafiqur_rahman_shishir.CV.pdf">Live link</a></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div
+                    class="bg-white/20 rounded-xl border-l-2 border-r-2 md:border-l-0 md:border-r-0 lg:border-t-2 border-project_color">
+                    <img src="images/project_image/p_3.png" class="w-full rounded-t-xl border-b-2 border-project_color">
+                    <div class="p-2 flex flex-col justify-between min-h-[250px]">
+                        <div>
+                            <h1 class="text-project_color text-lg md:text-2xl border-b-2 border-project_color">Project
+                                with Daisy Ui</h1>
+                            <p class="text-white text-xs md:text-sm ">This is a hockey club's website! There is a
+                                tailwind component library named Daisy ui was also used for this project.</p>
+                        </div>
+                        <div class="flex flex-col md:flex-row gap-1 justify-start mt-4">
+                            <button
+                                class="text-project_color text-sm md:text-lg border-2 border-project_color p-1 rounded-xl"><a
+                                    href="images/syed_shafiqur_rahman_shishir.CV.pdf">Source Code</a></button>
+                            <button
+                                class="text-project_color text-sm md:text-lg border-2 border-project_color p-1 rounded-xl"><a
+                                    href="images/syed_shafiqur_rahman_shishir.CV.pdf">Live link</a></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div
+                    class="bg-white/20 rounded-xl border-l-2 border-r-2 md:border-l-0 md:border-r-0 lg:border-b-2 border-project_color">
+                    <img src="images/project_image/p_2.png" class="w-full rounded-t-xl border-b-2 border-project_color">
+                    <div class="p-2 flex flex-col justify-between min-h-[250px]">
+                        <div>
+                            <h1 class="text-project_color text-lg md:text-2xl border-b-2 border-project_color">
+                                Responsive website with vanila css</h1>
+                            <p class="text-white text-xs md:text-sm ">This is a sweet web site for traveling company.It
+                                built by only raw code of html and css. This site is completely responsive.</p>
+                        </div>
+                        <div class="flex flex-col md:flex-row gap-1 justify-start mt-4">
+                            <button
+                                class="text-project_color text-sm md:text-lg border-2 border-project_color p-1 rounded-xl"><a
+                                    href="images/syed_shafiqur_rahman_shishir.CV.pdf">Source Code</a></button>
+                            <button
+                                class="text-project_color text-sm md:text-lg border-2 border-project_color p-1 rounded-xl"><a
+                                    href="images/syed_shafiqur_rahman_shishir.CV.pdf">Live link</a></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div
+                    class="bg-white/20 rounded-xl border-l-2 border-r-2 md:border-l-0 md:border-r-0 lg:border-b-2 border-project_color">
+                    <img src="images/project_image/p_4.png" class="w-full rounded-t-xl border-b-2 border-project_color">
+                    <div class="p-2 flex flex-col justify-between min-h-[250px]">
+                        <div>
+                            <h1 class="text-project_color text-lg md:text-2xl border-b-2 border-project_color">Buildign
+                                website using Tailwind</h1>
+                            <p class="text-white text-xs md:text-sm ">This is a fashion brand website. It based on html,
+                                css. But CSS tailwind framework was also used to develop this site.</p>
+                        </div>
+                        <div class="flex flex-col md:flex-row gap-1 justify-start mt-4">
+                            <button
+                                class="text-project_color text-sm md:text-lg border-2 border-project_color p-1 rounded-xl"><a
+                                    href="images/syed_shafiqur_rahman_shishir.CV.pdf">Source Code</a></button>
+                            <button
+                                class="text-project_color text-sm md:text-lg border-2 border-project_color p-1 rounded-xl"><a
+                                    href="images/syed_shafiqur_rahman_shishir.CV.pdf">Live link</a></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div
+                    class="bg-white/20 rounded-xl border-l border-r md:border-l-0 md:border-b md:border-r border-project_color">
+                    <img src="images/project_image/p_2.png" class="w-full rounded-t-xl border-b-2 border-project_color">
+                    <div class="p-2 flex flex-col justify-between min-h-[250px]">
+                        <div>
+                            <h1 class="text-project_color text-lg md:text-2xl border-b-2 border-project_color">
+                                Responsive website with vanila css</h1>
+                            <p class="text-white text-xs md:text-sm ">This is a sweet web site for traveling company.It
+                                built by only raw code of html and css. This site is completely responsive.</p>
+                        </div>
+                        <div class="flex flex-col md:flex-row gap-1 justify-start mt-4">
+                            <button
+                                class="text-project_color text-sm md:text-lg border-2 border-project_color p-1 rounded-xl"><a
+                                    href="images/syed_shafiqur_rahman_shishir.CV.pdf">Source Code</a></button>
+                            <button
+                                class="text-project_color text-sm md:text-lg border-2 border-project_color p-1 rounded-xl"><a
+                                    href="images/syed_shafiqur_rahman_shishir.CV.pdf">Live link</a></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mt-10">
+                <h1 class="text-project_color text-2xl mb-5">Click the button bellow to see more projects:</h1>
+                <button class="text-project_color text-2xl border-2 border-project_color p-2 rounded-xl"><a
+                        href="images/syed_shafiqur_rahman_shishir.CV.pdf">More Projects</a></button>
+            </div>
+
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="mt-10 relative px-5 py-5" id="contact_sec">
+            <div class="absolute top-0 left-0">
+                <img src="images/png_arrows/contact_up.png" alt="">
+            </div>
+            <div class="absolute bottom-0 left-0">
+                <img src="images/png_arrows/contact_down.png">
+            </div>
+            <div>
+                <h1 class="text-contact_color text-4xl mb-10">Contact With me</h1>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-5 w-full items-center justify-center">
+                <img src="images/png_arrows/contact_design.png">
+                <form action="https://api.web3forms.com/submit" method="POST" required class="flex flex-col gap-10 w-full lg:w-1/2">
+                    <input type="hidden" name="access_key" value="2f08d051-cdbf-4ffe-9479-c496ca73d555">
+                    <input type="text" name="name" placeholder="Enter your name"
+                        class="h-10 md:h-16 rounded-lg px-5 bg-contact_color/20 text-xs md:text-xl text-white">
+                    <input type="email" name="email" placeholder="Enter your email"
+                        class="h-10 md:h-16 rounded-lg px-5 bg-contact_color/20 text-xs md:text-xl text-white">
+                    <textarea name="message" id="" rows="5"
+                        class="rounded-lg px-5 bg-contact_color/20 text-xs md:text-xl text-white p-5"
+                        placeholder="Your Message"></textarea>
+                    <button type="submit" class="text-contact_color text-2xl border-2 border-contact_color p-2 rounded-xl"
+                        >Submit</button>
+                </form>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer class="px-20 py-40 mt-10">
+        <div class="text-center">
+
+            <div>
+                <h1 class="text-2xl md:text-6xl lg:text-8xl text-contact_color">Thanks for Finding Me!</h1>
+            </div>
+            <div class=" flex gap-5 justify-center my-16">
+                <div class="">
+                    <a href="https://www.instagram.com/syedshishir26/"><i
+                            class="fa-brands fa-instagram text-contact_color text-4xl"></i></a>
+                </div>
+                <div class="">
+                    <a href="https://github.com/syedshishir26"><i
+                            class="fa-brands fa-github text-contact_color text-4xl"></i></a>
+                </div>
+                <div class="">
+                    <a href="https://linkedin.com/in/syedshafiqurrahmanshishir"><i
+                            class="fa-brands fa-linkedin text-contact_color text-4xl"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
