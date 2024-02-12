@@ -315,11 +315,11 @@
                 <img src="images/png_arrows/contact_design.png">
                 <form action="https://api.web3forms.com/submit" method="POST" required class="flex flex-col gap-10 w-full lg:w-1/2">
                     <input type="hidden" name="access_key" value="2f08d051-cdbf-4ffe-9479-c496ca73d555">
-                    <input type="text" name="name" placeholder="Enter your name"
+                    <input type="text" name="name" placeholder="Enter your name" required
                         class="h-10 md:h-16 rounded-lg px-5 bg-contact_color/20 text-xs md:text-xl text-white">
-                    <input type="email" name="email" placeholder="Enter your email"
+                    <input type="email" name="email" placeholder="Enter your email" required
                         class="h-10 md:h-16 rounded-lg px-5 bg-contact_color/20 text-xs md:text-xl text-white">
-                    <textarea name="message" id="" rows="5"
+                    <textarea name="message" id="" rows="5" required
                         class="rounded-lg px-5 bg-contact_color/20 text-xs md:text-xl text-white p-5"
                         placeholder="Your Message"></textarea>
                     <button type="submit" class="text-contact_color text-2xl border-2 border-contact_color p-2 rounded-xl"
